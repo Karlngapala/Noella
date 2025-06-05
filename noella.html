@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Noella!</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmowaXQ3NDllN2EyeTE4MDhlc3puYm44dmM4aW92NXMxNHR0eXp3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Yl0h8fhrXDFT9PM6xM/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #302626;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      color: #b30059;
+      text-shadow: 1px 1px #fff;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 55px;
+      margin-bottom: 10px;
+      animation: bounce 2s infinite;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .message-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      color: #333;
+    }
+
+    .message-box h2 {
+      color: #d63384;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .message-box p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    audio {
+      display: block;
+      margin: 40px auto 0;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #391111;
+      text-shadow: 1px 1px #ffffff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 42px;
+      }
+
+      .message-box p {
+        font-size: 16px;
+      }
+
+      footer {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <header>
+      <h1>Happy Birthday Noella</h1>
+      <p>Wishing you all the happiness in the world!</p>
+    </header>
+
+    <div class="container">
+      <div class="gallery">
+        <img src="ella.jpg" alt="Photo 1" />
+        <img src="noellalovekarl.jpg" alt="Photo 2" />
+        <img src="noellawithkarl.jpg" alt="Photo 3" />
+        <img src="cute.jpg" alt="Photo 4" />
+        <img src="noellla.jpg" alt="Photo 5" />
+      </div>
+
+      <div class="message-box">
+        <h2>Special Message From: Karl</h2>
+        <p>
+          Noella, I just want to say how grateful I am to have you in my life. You're beautiful, strong, and full of kindness.
+          May this birthday be as amazing as you are. I know you have silent battles in your life, but I'm always here to listen.
+          You deserve all the love and happiness that you're experiencing right now! Enjoy your special day — happy 18th birthday, Noella!
+        </p>
+      </div>
+
+      <audio controls autoplay loop>
+        <source src="https://files.catbox.moe/hgnwiu.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <footer>
+      Made with love by Karl<br>
+      @karl_szn • @eleenasei_
+    </footer>
+  </div>
+
+</body>
+</html>
